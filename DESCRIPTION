@@ -11,3 +11,4 @@ Description: The TileDB Tutorial at useR! 20201 relies on a few R packages that 
 Imports: tiledb, knitr, palmerpenguins, Matrix, data.table
 Suggests: lidR, arrow, rtsplot, xts
 License: GPL (>= 2)
+RoxygenNote: 6.0.1
