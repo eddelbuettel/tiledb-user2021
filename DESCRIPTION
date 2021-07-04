@@ -1,0 +1,13 @@
+Package: tiledb.user2021
+Type: Package
+Title: TileDB useR!2021 Tutorial Support Package
+Version: 0.1.0
+Date: 2021-07-04
+Author: Dirk Eddelbuettel and Aaron Wolen
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Description: The TileDB Tutorial at useR! 20201 relies on a few R packages that are used in the
+ different application examples. This packages helps by regrouping them as suggsted packages,
+ and also includes the example code, and pdf slides.
+Imports: tiledb, knitr, palmerpenguins, Matrix, data.table
+Suggests: lidR, arrow, rtsplot, xts
+License: GPL (>= 2)
