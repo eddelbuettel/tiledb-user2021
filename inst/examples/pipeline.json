@@ -1,0 +1,11 @@
+[
+    {
+      "type":"readers.las",
+      "filename":"LAS_17258975.las"
+    },
+    {
+      "type":"writers.tiledb",
+      "chunk_size": 1000000,
+      "array_name":"las_array"
+    }
+]
