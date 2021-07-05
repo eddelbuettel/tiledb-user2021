@@ -1,0 +1,12 @@
+docker run --name tiledb-mariadb-r -it -d --rm -e MYSQL_ALLOW_EMPTY_PASSWORD=1 -v $PWD:/mnt tiledb/tiledb-mariadb-r
+
+## launch R session
+docker exec -it -u root tiledb-mariadb-r R
+
+##
+library(RMariaDB)
+library(dplyr, warn.conflicts=FALSE)
+con <- DBI::dbConnect(RMariaDB::MariaDB(), dbname="test") 
+tbl(con, "/mnt/airline") |> dplyr::select(contains("Dep"))
+
+
