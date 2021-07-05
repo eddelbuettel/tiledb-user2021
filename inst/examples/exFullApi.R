@@ -9,7 +9,7 @@ tiledb_array_create(uri, schema)
 data <- 1:16
 arr <- tiledb_array(uri = uri)
 qry <- tiledb_query(arr, "WRITE")
-qry <- tiledb_query_set_layout("ROW_MAJOR")
+qry <- tiledb_query_set_layout(qry, "ROW_MAJOR")
 qry <- tiledb_query_set_buffer(qry, "a", data)
 qry <- tiledb_query_submit(qry)
 qry <- tiledb_query_finalize(qry)

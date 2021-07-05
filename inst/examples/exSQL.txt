@@ -1,0 +1,23 @@
+## launch docker daemon
+docker run --name tiledb-mariadb-r -it -d --rm -e MYSQL_ALLOW_EMPTY_PASSWORD=1 tiledb/tiledb-mariadb-r
+
+## launch R session
+docker exec -it -u root tiledb-mariadb-r R
+
+## in R, write data
+library(tiledb)
+fromDataFrame(palmerpenguins::penguins_raw, "/tmp/penguinsraw")
+
+
+## in R, read data from TileDB via RMariaDB
+library(RMariaDB)
+library(dplyr, warn.conflicts=FALSE)
+con <- DBI::dbConnect(RMariaDB::MariaDB(), dbname="test")
+tbl(con, "/tmp/penguinsraw") |>
+    dplyr::select(contains("Length"))
+
+## add collect() to materialize the data
+tbl(con, "/tmp/penguinsraw") |>
+    dplyr::select(contains("Length")) |>
+    collect()
+

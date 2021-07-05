@@ -45,4 +45,5 @@ newdf <- x[]
 
 
 x <- tiledb_array(uri, as.data.frame = TRUE, extended = FALSE)
-attrs(x) <- c("species", "island", "sex")
+attrs(x) <- c("island", "sex")
+newdf <- x[]                            # two and two columns
