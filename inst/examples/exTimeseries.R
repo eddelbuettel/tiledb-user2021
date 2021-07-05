@@ -41,6 +41,7 @@ suppressMessages({
     library(xts)                            # used by rtsplot
 })
 setDT(BMW)
+symbol <- "BMW"
 rt <- as.xts(BMW[Mnemonic==symbol,
                  .(Datetime, Open=StartPrice, High=MaxPrice,
                    Low=MinPrice, Close=EndPrice, Volume=TradedVolume)])
