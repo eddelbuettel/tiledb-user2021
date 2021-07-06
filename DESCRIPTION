@@ -8,7 +8,7 @@ Maintainer: Dirk Eddelbuettel <edd@debian.org>
 Description: The TileDB Tutorial at useR! 20201 relies on a few R packages that are used in the
  different application examples. This packages helps by regrouping them as suggsted packages,
  and also includes the example code, and pdf slides.
-Imports: tiledb, knitr, palmerpenguins, Matrix, data.table
+Imports: tiledb, knitr, palmerpenguins, Matrix, data.table, utils
 Suggests: lidR, arrow, rtsplot, xts
 License: GPL (>= 2)
 RoxygenNote: 7.1.1
