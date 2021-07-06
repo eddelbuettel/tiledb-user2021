@@ -1,7 +1,7 @@
 Package: tiledb.user2021
-Version: 0.1.0
-Imports: tiledb, knitr, palmerpenguins, Matrix, data.table, utils
+Version: 0.1.1
+Imports: tiledb, knitr, palmerpenguins, Matrix, data.table, utils, tools, tibble, vroom, ggplot2
 Suggests: lidR, arrow, rtsplot, xts
 License: GPL (>= 2)
-MD5sum: b5a7852c1d05dd11b38a6c81b0e2cb17
+MD5sum: 1142c24a22a6936a52c9cf20cf57b7b5
 NeedsCompilation: no
