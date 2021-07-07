@@ -14,6 +14,6 @@
 ## lazy eval: e.g. for subsets only requested data transferred to client
 
 
-pp <- tiledb_array("s3://tiledb-dirk/palmer_penguins", as.data.frame=TRUE) # not a public s3 bucket
+pp <- tiledb_array("s3://tiledb-conferences/useR-2021/palmer_penguins", as.data.frame=TRUE)
 dat <- pp[]
 head(dat)
