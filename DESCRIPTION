@@ -1,8 +1,8 @@
 Package: tiledb.user2021
 Type: Package
 Title: TileDB useR!2021 Tutorial Support Package
-Version: 0.1.1
-Date: 2021-07-04
+Version: 0.1.2
+Date: 2021-07-07
 Author: Dirk Eddelbuettel and Aaron Wolen
 Maintainer: Dirk Eddelbuettel <edd@debian.org>
 Description: The TileDB Tutorial at useR! 20201 relies on a few R packages that are used in the
