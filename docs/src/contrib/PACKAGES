@@ -5,3 +5,11 @@ Suggests: lidR, arrow, rtsplot, xts
 License: GPL (>= 2)
 MD5sum: 1142c24a22a6936a52c9cf20cf57b7b5
 NeedsCompilation: no
+
+Package: tiledb.user2021
+Version: 0.1.3
+Imports: tiledb, knitr, palmerpenguins, Matrix, data.table, utils, tools, tibble, vroom, ggplot2
+Suggests: lidR, arrow, rtsplot, xts
+License: GPL (>= 2)
+MD5sum: 37a104302415060d4f0e5b5c3cf90b00
+NeedsCompilation: no
